@@ -6,9 +6,20 @@ import java.util.Map;
  * Created by mohammad on 3/16/17.
  */
 public class RSASmallnumbers {
-    private int n = 0;
-    private int e = 0;
-    private int d = 0;
+    private int n;
+    private int e;
+    private int d;
+
+    public RSASmallnumbers() {
+        n = 0;
+        e = 0;
+        d = 0;
+    }
+    public RSASmallnumbers(int n, int e) {
+        this.n=n;
+        this.e=e;
+    }
+
     private int GCD(int p, int q) {
 
         if (q == 0) {
